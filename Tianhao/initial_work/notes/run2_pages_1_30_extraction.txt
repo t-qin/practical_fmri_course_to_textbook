@@ -1,0 +1,287 @@
+===== PAGE 1 =====
+Day One
+Morning
+Introduction to NMR
+
+
+===== PAGE 2 =====
+Net magnetization
+The spins’ precessional 
+frequency is called the Larmor 
+frequency, w0
+    w0 = gB0 
+(Hz) 
+ 
+ 
+g (1H)  =  42.58 MHz/T
+
+
+===== PAGE 3 =====
+Signal strength depends on magnetic field 
+strength, B0
+DE  µ B0
+The population of spin states is 
+described by a Boltzmann 
+distribution:
+Nlow/Nhigh = e DE/kT
+  ≈ 1.000005  (at body temp.)
+(k is the Boltzmann constant, T is absolute 
+temp.)
+E = hw 
+
+
+===== PAGE 4 =====
+Before excitation
+Rotating reference frame: 
+wrot = w0
+Bulk magnetization aligned 
+along z, z’ axis.
+Thermal equilibrium.
+z, z’
+y’
+x’
+B0
+
+
+===== PAGE 5 =====
+Excitation: the RF pulse
+Add briefly a second 
+magnetic field, B1. B1 
+oscillates in time, it’s not 
+constant like B0
+B1 appears stationary in 
+the rotating frame if it 
+oscillates at the Larmor 
+frequency
+Note also that B1 must act 
+perpendicular to B0
+z, z’
+y’
+x’
+B0
+B1
+
+
+===== PAGE 6 =====
+Excitation: the RF pulse
+M rotates about B1 for the 
+duration of the B1 pulse, Tp
+We can set Tp so that M ends 
+up along x’, for a 90-degree 
+pulse
+In general:  q = gB1Tp
+z, z’
+y’
+x’
+B0
+B1
+
+
+===== PAGE 7 =====
+Magnetization after excitation:
+After a 90° pulse, Mxy=M0 is 
+along x’
+There is no apparent 
+movement of M in the rotating 
+frame
+However, because of thermal 
+motions in the sample, M 
+doesn’t stay fixed…..
+z, z’
+y’
+x’
+B0
+
+
+===== PAGE 8 =====
+Magnetization after excitation:
+Spins in some regions of the 
+brain rotate faster, some 
+slower
+Mxy dephases: 
+              
+          Mxy(t) = Mxy(t=0) e-t/T2
+z, z’
+y’
+x’
+B0
+
+
+===== PAGE 9 =====
+Signal detection:
+The changing magnetic 
+component in the transverse 
+(x’y’) plane is the relevant 
+component.
+We detect (via magnetic 
+induction) the oscillating (but 
+decaying) magnetization with a 
+tuned coil.
+z, z’
+y’
+B0
+
+
+===== PAGE 10 =====
+The NMR signal
+The signal decays with 
+exponential decay constant T2
+T2 characterizes all exchanges 
+of energy between spins – 
+there’s no net energy change
+
+
+===== PAGE 11 =====
+The spin echo
+
+
+===== PAGE 12 =====
+Excitation
+B1
+90° pulse
+You are here!
+
+
+===== PAGE 13 =====
+After first evolution
+B1
+90° pulse
+faster
+slower
+1st TE/2
+You are here!
+
+
+===== PAGE 14 =====
+“Refocusing” pulse
+B1
+90° pulse
+B1
+180° pulse
+faster
+slower
+1st TE/2
+You are here!
+
+
+===== PAGE 15 =====
+After refocusing
+B1
+90° pulse
+B1
+180° pulse
+faster
+slower
+1st TE/2
+After 180°
+You are here!
+
+
+===== PAGE 16 =====
+After second evolution
+B1
+90° pulse
+B1
+180° pulse
+faster
+slower
+1st TE/2
+2nd TE/2
+After 180°
+You are here!
+
+
+===== PAGE 17 =====
+Longitudinal relaxation time (T1)
+AKA spin-lattice relaxation
+T1 processes re-establish a thermal 
+equilibrium.
+The energy from the spins goes into 
+vibrations/rotations/translations of whole 
+molecules, i.e. as heat.
+After a 90°pulse we have Mz = 0
+ M grows with T1 back to Mz = M0 :
+                Mz = M0(1-e-t/T1)
+z, z’
+y’
+x’
+B0
+
+
+===== PAGE 18 =====
+Molecular origins of relaxation
+
+
+===== PAGE 19 =====
+
+
+===== PAGE 20 =====
+Approximate T1 and T2 values at 3 T
+T2 (ms)      T1 (ms)
+          White matter              60             800
+          Gray matter               80             1200
+          CSF                           400+         2500+
+ 
+   T2 < T1 because components at w0 and zero frequency are 
+active for T2 relaxation, whereas only w0 is active for T1
+      T1 gets significantly longer with increasing B0 whereas T2 values 
+increase only slowly with B0.
+
+
+===== PAGE 21 =====
+Diffusion, T2 and T2*
+
+
+===== PAGE 22 =====
+Chemical shift
+
+
+===== PAGE 23 =====
+Bonus videos
+How MRI works
+https://www.youtube.com/watch?v=TQegSF4ZiIQ
+NMR spectroscopy for visual learners
+https://www.youtube.com/watch?v=fG-ZexdlziU 
+
+
+===== PAGE 24 =====
+Day One
+Afternoon
+MRI scanner basics
+
+
+===== PAGE 25 =====
+Main MRI components
+• 3 T magnet to polarize the 
+subject
+• 3-axis gradient coils to 
+encode spatial info.
+       (max. 80 mT/m)
+• 123 MHz transmit RF coil 
+to excite spins
+       (max. ~20 μT)
+• 123 MHz receive-only coil
+(We use a body coil to transmit B1, separate head coil to receive.)
+
+
+===== PAGE 26 =====
+
+
+===== PAGE 27 =====
+Gradient coil
+
+
+===== PAGE 28 =====
+Receive coil arrays
+From Kaza et al. JMRI (2011)
+
+
+===== PAGE 29 =====
+32-channel coil
+Bottom half only, from underneath with cover removed
+
+
+===== PAGE 30 =====
+Receive field heterogeneity
+
+

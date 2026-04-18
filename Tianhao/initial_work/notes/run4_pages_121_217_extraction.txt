@@ -1,0 +1,651 @@
+===== PAGE 121 =====
+Magnetic susceptibility, c
+• The tendency of a material to magnetize when exposed 
+to a magnetic field
+• Interaction of electrons with the magnetic field
+• Variations in c cause intrinsic, static magnetic field 
+gradients in parts of the brain
+• Air in paranasal sinuses adds local heterogeneity to c
+• Gradients established by variations in c act to de-phase 
+the spins just like the imaging gradients, except that we 
+can’t turn the intrinsic gradients off!
+
+
+===== PAGE 122 =====
+Interfaces, especially air-bone-brain, create strong 
+magnetic field gradients across parts of the brain
+
+
+===== PAGE 123 =====
+A map of MR image phase shows the problem
+
+
+===== PAGE 124 =====
+T2* relaxation 
+occurs during the 
+EPI readout
+We try to set TE ~ T2* for 
+BOLD contrast.
+
+
+===== PAGE 125 =====
+Day Three
+Afternoon
+Introduction to EPI
+
+
+===== PAGE 126 =====
+Flip angle effects: spin history
+With flow, the apparent T1 for blood decreases.
+Duyn et al. (1994) & Frahm 
+et al. (1994) showed that 
+blood inflow plays a major 
+role in GRE-based functional 
+brain maps. 
+Gao & Liu, NeuroImage 2012 15;62(2):1035-9. 
+
+
+===== PAGE 127 =====
+FA & inflow effects in fMRI
+3 T, TR=1000 ms
+Visual stimulation
+FA = 30, 60 or 90 degrees
+Slightly higher signal 
+change with higher FA
+Higher FA produces earlier 
+time-to-peak of HRF (inflow 
+plus CBV-BOLD effects)
+Gao & Liu, NeuroImage 2012 15;62(2):1035-9. 
+
+
+===== PAGE 128 =====
+FA: SNR and temporal SNR
+
+
+===== PAGE 129 =====
+FA = 20 °
+FA = 65 °
+TR = 2000 MS
+
+
+===== PAGE 130 =====
+FA = 20°
+Stdev: 150 volumes
+FA = 65°
+
+
+===== PAGE 131 =====
+Receive bias field effects
+
+
+===== PAGE 132 =====
+(aka RFC-MoCo effect)
+ “Even after perfect rigid-body alignment (motion correction), the signal 
+time-course in a given brain structure will be modulated by the motion of 
+that structure through the steep sensitivity gradient.”
+L Wald, NeuroImage 2012;62(2):1221-9.
+Rx field contrast “staining”
+
+
+===== PAGE 133 =====
+Before motion correction
+Homogeneous Rx coil
+
+
+===== PAGE 134 =====
+After perfect motion correction
+Homogeneous Rx coil
+S
+t
+
+
+===== PAGE 135 =====
+Before motion correction
+Heterogeneous Rx coil
+
+
+===== PAGE 136 =====
+After perfect motion correction
+Heterogeneous Rx coil
+S
+t
+
+
+===== PAGE 137 =====
+How big is the effect?
+ΔS (%)
+Birdcage                                                           12ch
+Sheltraw & Inglis 2012; arXiv:1210.3633 
+1 mm translation in y
+
+
+===== PAGE 138 =====
+ΔS (%)
+32-ch coil 
+simulations
+Sheltraw & Inglis, Proc ISMRM 2013; 3352
+
+
+===== PAGE 139 =====
+“Anchoring” during volume realignment
+•
+Rx contrast may dominate anatomical contrast, driving volreg cost function
+•
+Normalize by the Rx bias field; Hartwig et al. Proc ISMRM 3628 (2011)
+Raw 32ch                                 Prescan normalized
+
+
+===== PAGE 140 =====
+Day Four
+Morning
+Advanced EPI
+
+
+===== PAGE 141 =====
+Full k-space
+
+
+===== PAGE 142 =====
+Partial Fourier EPI
+
+
+===== PAGE 143 =====
+Partial Fourier EPI:
+
+
+===== PAGE 144 =====
+a - ib
+a - ib
+a + ib
+a + ib
+Conjugate symmetry in k-space
+
+
+===== PAGE 145 =====
+Reconstruct omitted portion
+Several ways to do this. We use the Siemens default: zero-fill the missing 
+portion prior to 2D FT.
+
+
+===== PAGE 146 =====
+We should be able to omit acquisition of the 
+early or the late echoes, with different 
+experimental consequences.
+Product EPI omits early echoes. CMRR EPI 
+allows omission of late echoes as an option.
+Omitting early echoes allows a shorter TE, 
+whereas omitting later echoes allows a 
+shorter TR
+
+
+===== PAGE 147 =====
+Early              Late
+Omitting early echoes permits shorter TE. But we want 
+BOLD contrast and need TE ~ T2* so omitting late echoes 
+should be preferred.
+
+
+===== PAGE 148 =====
+Partial Fourier speed gains
+(Siemens 3 T TRIO, TR=2000 ms)
+• Full Fourier: 
+37 slices @ TE=22 ms
+• Early 6/8 pF: 
+40 slices @ TE=18 ms
+• Late 6/8 pF: 
+44 slices @ TE=22 ms
+Omitting late echoes allows 10% 
+more coverage than early echoes at 
+a better TE for BOLD
+
+
+===== PAGE 149 =====
+Partial Fourier: more dropout?
+• Local k-space trajectory may not match the ideal 
+trajectory, because of magnetic susceptibility gradients
+• Biggest problems likely to be frontal & temporal lobes
+• Signal that drops out with early echo omission is likely 
+to be retained in late echo omission; there’s a degree 
+of choice (but you still can’t do better than full k-space 
+coverage)
+• However, more slices/TR permits thinner slices for the 
+same coverage, perhaps recovering some signal, too
+
+
+===== PAGE 150 =====
+Partial Fourier can increase dropout
+We will lose SNR by omitting 
+these echoes. But which brain 
+regions exhibit the largest losses?
+
+
+===== PAGE 151 =====
+Partial Fourier EPI
+Full k-space                 Early 6/8ths                   Late 6/8ths
+
+
+===== PAGE 152 =====
+Full k-space
+
+
+===== PAGE 153 =====
+Early 6/8ths partial Fourier
+
+
+===== PAGE 154 =====
+Late 6/8ths partial Fourier
+
+
+===== PAGE 155 =====
+Partial Fourier and PE direction
+• Omit late echoes to get the most slices in TR
+• P-A or A-P phase encoding gives a degree of 
+control over the regions that drop out 
+• Set phase encode direction and define “late 
+echoes” based on the regions of extra dropout
+
+
+===== PAGE 156 =====
+Early               Late
+Late!!!
+
+
+===== PAGE 157 =====
+Partial Fourier: image smoothing
+Full k-space                 Early 6/8ths                   Late 6/8ths
+
+
+===== PAGE 158 =====
+Partial Fourier pros & cons
+• Early echo omission is standard on Siemens EPI, 
+but late echo omission is an option on CMRR EPI
+• Late echo omission nets ~20% more slices in TR
+• No new motion sensitivity
+• Dropout may be enhanced slightly
+• But enhanced smoothing is implicit
+
+
+===== PAGE 159 =====
+In-plane acceleration
+(GRAPPA)
+
+
+===== PAGE 160 =====
+R=2 k-space trajectory:
+
+
+===== PAGE 161 =====
+
+
+===== PAGE 162 =====
+32-channel coil
+Bottom half only, from underneath with cover removed
+
+
+===== PAGE 163 =====
+GRAPPA scheme (R=2)
+ACS1 … ACS2 … EPI1 … EPI2 … EPI3 ..............… EPIN
+•
+The ACS make up a reference data set
+•
+The omitted k-space lines from each accelerated (under-
+sampled) EPI volume are computed using the complete ACS set
+•
+A fit is performed for each receive coil element separately, 
+because each coil element (or loop) receives signal from a 
+different part of the head
+•
+Individual coil images are combined to produce the final image
+
+
+===== PAGE 164 =====
+GRAPPA motion sensitivity
+• ACS used to reconstruct all the under-sampled 
+time series
+• Motion during the ACS affects all data!!!
+• Motion after the ACS generates a mismatch 
+between the ACS and the current EPI volume
+• If subject position changes yet subject is now 
+motionless, a mismatch may remain!
+
+
+===== PAGE 165 =====
+ACS1 … ACS2 … EPI1 … EPI2 … EPI3 ............ EPIN-1 … EPI N
+Motion corruption of
+reference data
+ACS1 … ACS2 … EPI1 … EPI2 … EPI3 ............ EPIN-1 … EPI N
+Mismatch of reference data
+with the time series
+
+
+===== PAGE 166 =====
+GRAPPA motion sensitivity
+No motion                  Motion during ACS          Motion after ACS
+Temporal SNR images
+
+
+===== PAGE 167 =====
+GRAPPA pros & cons
+• Reduces PE distortion by factor R
+• Reduced distortion can recover some 
+signal dropout
+• Can allow higher nominal resolution
+• 10-15% more slices in TR
+• LARGE increase in motion sensitivity!
+
+
+===== PAGE 168 =====
+Further information
+Partial Fourier versus GRAPPA for 
+increasing EPI slice coverage 
+https://practicalfmri.blogspot.com/2014/01/partial-fourier-
+versus-grappa-for.html
+
+
+===== PAGE 169 =====
+Simultaneous multi-slice 
+(SMS) EPI
+a.k.a. multi-band (MB) EPI
+
+
+===== PAGE 170 =====
+• Requires a phased-array coil
+• Need lots of coil loops along the slice axis
+• Acquire a set of “single band” reference EPIs 
+without acceleration, i.e. one multi-slice set at a 
+time (takes SMS x TR to acquire)
+• Then acquire time series using simultaneous slice 
+excitation
+• Use a GRAPPA-like reconstruction to un-alias the 
+simultaneous slices
+SMS-EPI - how it works
+
+
+===== PAGE 171 =====
+Coils along the slice axis?
+From Kaza et al. JMRI (2011)
+
+
+===== PAGE 172 =====
+From: D Feinberg & K Setsompop, JMR (2013)
+“Ultra-Fast MRI of the Human Brain with Simultaneous Multi-Slice Imaging”
+
+
+===== PAGE 173 =====
+SMS-EPI pulse sequence
+From: D Feinberg & K Setsompop, JMR (2013) 
+“Ultra-Fast MRI of the Human Brain with Simultaneous Multi-Slice Imaging”
+
+
+===== PAGE 174 =====
+From: D Feinberg & K Setsompop, JMR (2013)
+“Ultra-Fast MRI of the Human Brain with Simultaneous Multi-Slice Imaging”
+
+
+===== PAGE 175 =====
+EPI                             SMS=6
+Some contrast differences due to longer effective TR for EPI.
+
+
+===== PAGE 176 =====
+No intentional motion   
+Motion with SMS-EPI
+TSNR images
+MB=6, 2 mm voxels, TR=1300 ms
+Motion during SBRef
+Motion after SBRef
+
+
+===== PAGE 177 =====
+But even SMS has limits!
+• Voxels below (2 mm)3 have low SNR
+• 1.5 mm resolution (partial brain coverage) 
+is probably the practical limit at 3 T
+• Motion sensitivity…? 
+• SMS > 5 generally not advised
+• Think about R x SMS if using GRAPPA too
+
+
+===== PAGE 178 =====
+Multi-echo EPI
+• Combine 2+ echoes to boost SNR
+• Or use a model to classify BOLD from 
+non-BOLD signal changes
+https://tedana.readthedocs.io/en/stable/index.html
+tedana: TE Dependent ANAlysis
+
+
+===== PAGE 179 =====
+Weighted sum of echoes
+https://doi.org/10.3390/s23094329
+
+
+===== PAGE 180 =====
+Classify BOLD vs non-BOLD
+
+
+===== PAGE 181 =====
+Classify BOLD vs non-BOLD
+
+
+===== PAGE 182 =====
+ME-EPI pros & cons
+• Can boost regional SNR
+• Can sometimes differentiate artifacts
+• Doesn’t deal with a lot of physiology 
+(e.g. blood gases) which cause real 
+BOLD but non-neural signals
+• Can leave subtle motion issues
+• Needs in-plane GRAPPA for 3+ echoes
+
+
+===== PAGE 183 =====
+Day Four
+Afternoon
+Advanced EPI
+
+
+===== PAGE 184 =====
+FLEET: Fast Low-angle Excitation Echo-planar Technique
+Polimeni et al. Magn Reson Med. 2016;75(2):665-679
+- Minimize time between ACS segments for each slice
+- Loop the ACS, then the slices, using low FA to reduce spin history
+
+
+===== PAGE 185 =====
+Day Five
+Morning
+Artifacts and troubleshooting
+
+
+===== PAGE 186 =====
+“There is no situation so bad that 
+you can’t make it worse.”
+- Chris Hadfield, retired Canadian astronaut 
+
+
+===== PAGE 187 =====
+Artifact recognition
+• Learn what “good data” looks like for your scan
+• Get to know the background! Most of the problems 
+lurk down at the noise level
+• Proper identification of normal artifacts (ghosting, 
+distortion, dropout, residual aliasing) is the first step 
+in diagnosing problems & troubleshooting
+• Motion is the biggest issue!
+• User error is the next biggest issue!
+• Scanner failures are rare but do happen
+
+
+===== PAGE 188 =====
+• Good axial EPI
+https://practicalfmri.blogspot.com/2011/11/understandin
+g-fmri-artifacts-good-axial.html
+• Artifacts by category
+https://practicalfmri.blogspot.com/2012/09/understandin
+g-fmri-artifacts-contents.html 
+Old but useful background
+
+
+===== PAGE 189 =====
+Normal ghosting
+
+
+===== PAGE 190 =====
+Scalp ghosts
+
+
+===== PAGE 191 =====
+Make sure Nyquist ghosts from eye movements 
+don’t fall on something you’re interested in!
+
+
+===== PAGE 192 =====
+Stdev image
+
+
+===== PAGE 193 =====
+Prescan normalize affects 
+background intensity
+PSN on                                 PSN off
+
+
+===== PAGE 194 =====
+Residual aliasing for GRAPPA
+GRAPPA R=2                         No GRAPPA
+
+
+===== PAGE 195 =====
+Residual aliasing for SMS
+SMS = 3                                 No SMS
+
+
+===== PAGE 196 =====
+Residual aliasing for SMS = 3
+
+
+===== PAGE 197 =====
+Residual aliasing: SMS+GRAPPA
+
+
+===== PAGE 198 =====
+Good EPI
+• Good axial EPI
+https://practicalfmri.blogspot.com/2011/11/understandin
+g-fmri-artifacts-good-axial.html
+• Good coronal & sagittal EPI
+https://practicalfmri.blogspot.com/2011/11/understandin
+g-fmri-artifacts-good.html
+
+
+===== PAGE 199 =====
+TSNR image
+SDEV image
+
+
+===== PAGE 200 =====
+Movement
+• Real head motion
+• Pseudo-motion from breathing
+• Movement of other body parts
+• Unstable hardware
+
+
+===== PAGE 201 =====
+Eye movements
+
+
+===== PAGE 202 =====
+Head movements
+
+
+===== PAGE 203 =====
+Talking
+
+
+===== PAGE 204 =====
+Moving feet
+
+
+===== PAGE 205 =====
+Coil instability
+Siemens Trio 32ch coil:  ~3 cm “play” along z, a few mm L-R
+
+
+===== PAGE 206 =====
+Coil instability?
+Prisma: 20-ch and 64-ch coils have a hard plug at the rear of the table
+But 32-ch uses cabled plugs & has similar ”play” as on Trio. Tilt potential?
+
+
+===== PAGE 207 =====
+Third party movement
+fMRI on a sea lion
+ICA courtesy of Blaise Frederick, McLean Hosp.
+
+
+===== PAGE 208 =====
+Motion in MP-RAGE
+Narai et al. 2022, 9(1):630. doi: 10.1038/s41597-022-01694-8. 
+No motion              Low motion           High motion
+
+
+===== PAGE 209 =====
+Foreign objects – metal pin
+
+
+===== PAGE 210 =====
+RF interference
+
+
+===== PAGE 211 =====
+Gradient spiking
+
+
+===== PAGE 212 =====
+Gradient spiking
+
+
+===== PAGE 213 =====
+Gradient spiking: phantom check
+
+
+===== PAGE 214 =====
+RF coil spikes
+EPI
+Localizer
+MP-RAGE
+
+
+===== PAGE 215 =====
+Day Five
+Afternoon
+Artifacts and troubleshooting
+
+
+===== PAGE 216 =====
+System drifts & chronic motion
+Foam padding?  Talking? 
+Other systemic or chronic effects?
+~10 mins
+Adjust:
+- Coil sensitivity map
+- pTx shim?
+- B0 shim
+Adjust:
+- B0 shim
+- Other?
+
+
+===== PAGE 217 =====
+Tactics for diagnosis
+• Assess temporal stability
+• Acquire a short retest
+• Make a brief list of possible explanations
+• Develop a most likely hypothesis
+– Does the problem exist in a different type of scan?
+– Can you make the problem worse?
+– Consider removing subject & setting up again
+– Consider running a short QC test
+
+

@@ -1,0 +1,179 @@
+You are an expert scientific textbook author, MRI/fMRI instructor, technical editor, and educational illustrator-integrator.
+
+I will provide you with a course-slide PDF. Your task is to transform it into a complete, polished, textbook-style PDF chapter book for long-term self-study, not a slide summary, not lecture notes, and not an outline.
+
+Your output must be written like a real advanced textbook that teaches deeply, clearly, and cumulatively. The final product should preserve all meaningful knowledge from the original PDF, expand it substantially, reorganize it pedagogically, and integrate all useful original figures into textbook-style figure placement and explanation.
+
+Core objective:
+Convert the source PDF into a comprehensive textbook-style document that:
+1. retains all substantive knowledge from the original PDF,
+2. explains every important concept in much greater depth,
+3. fills in missing background knowledge where needed,
+4. reorganizes the content into a logical textbook structure,
+5. preserves and incorporates all meaningful images/diagrams/tables from the original PDF,
+6. reads like a coherent, publishable educational text rather than lecture slides,
+7. is delivered as a well-formatted PDF.
+
+Non-negotiable requirements:
+
+A. Content completeness
+- Do not omit any meaningful concept, mechanism, equation, diagram, sequence, artifact type, comparison, caveat, troubleshooting point, or practical implication from the original PDF.
+- Every slide with real educational content must be absorbed into the textbook.
+- If a slide is terse, expand it into full textbook prose.
+- If the slide assumes prerequisite knowledge, explicitly teach that prerequisite.
+- When the source uses shorthand, convert it into precise, fully explained language.
+- Preserve technical accuracy at all times.
+
+B. Textbook transformation, not summarization
+- Do not merely paraphrase slide bullets.
+- Turn bullet points into flowing explanatory prose.
+- Build concept progression from fundamentals to advanced topics.
+- Use textbook pedagogy: intuition first, then formal explanation, then examples, then caveats, then practical interpretation.
+- Make the reader able to learn from this textbook alone without needing the original slides.
+
+C. Image and figure handling
+- Include all meaningful original figures, diagrams, charts, tables, and visual examples that materially help understanding.
+- Do not include purely decorative or redundant images unless they add educational value.
+- Every included figure must be embedded in a textbook manner, with:
+  - figure number,
+  - descriptive title,
+  - concise caption,
+  - explicit discussion in the main text explaining what the reader should notice.
+- If a figure is low-context in the slides, add explanatory context in the textbook.
+- If multiple consecutive slides show stages of one process, combine them into a single textbook explanation and, where appropriate, a figure sequence or multi-panel figure discussion.
+- If a figure contains text that is hard to read, rewrite the key content in the main text and/or caption.
+- If a figure can be improved conceptually by redrawing or reorganizing it into a cleaner textbook-style description, do so while preserving the original scientific meaning.
+
+D. Scientific expansion
+- You may add information beyond the PDF when it improves coherence, comprehension, accuracy, or completeness.
+- Add missing bridge explanations, definitions, historical context, mathematical intuition, practical MRI/fMRI implications, and common misconceptions.
+- However, any added material must stay relevant to the source content and not drift into unrelated topics.
+- Prioritize depth, clarity, and instructional value.
+
+E. Writing style
+- Write in a true textbook voice: clear, rigorous, cumulative, pedagogical, and polished.
+- Avoid slide-like fragments.
+- Avoid excessive brevity.
+- Prefer full explanations over compressed statements.
+- Define all technical terms on first use.
+- Use consistent terminology throughout.
+- Explain equations in words.
+- Make difficult concepts intuitive before formalizing them.
+
+F. Structure
+Reorganize the content into a textbook architecture such as:
+1. Title page
+2. Preface / how to use this book
+3. Table of contents
+4. Chapters
+5. Chapter summaries
+6. Key terms
+7. Review questions
+8. Optional worked examples
+9. Optional glossary
+10. Optional appendix for formulas, sequence logic, or artifact troubleshooting
+11. Optional index-like keyword list
+
+Use a chapter structure that fits the source material. For example, if appropriate:
+- Foundations of NMR and magnetization
+- Relaxation, excitation, and signal formation
+- MRI hardware and scanner components
+- Fourier transform and spatial encoding
+- Slice selection, gradients, and k-space
+- Basic MRI acquisition logic
+- EPI fundamentals
+- Major EPI artifacts: ghosting, distortion, dropout
+- Advanced EPI methods: partial Fourier, GRAPPA, SMS, multi-echo
+- Motion, instability, troubleshooting, and QC
+- Biological confounds in fMRI
+- Human factors and experimental design implications
+
+G. Depth level
+- Make the book substantially more detailed than the slides.
+- Assume the reader is intelligent but may not already understand MRI physics deeply.
+- Target advanced undergraduate, beginning graduate, or new research trainee level.
+- When relevant, include both conceptual and practical scanning perspectives.
+
+H. Equations and technical content
+- Preserve all meaningful equations from the source.
+- Typeset equations clearly.
+- For each important equation:
+  - define every variable,
+  - explain what it means physically,
+  - explain why it matters in MRI/fMRI practice.
+- Where useful, add small worked examples or intuition boxes.
+
+I. Special pedagogical additions
+Where appropriate, add:
+- “Why this matters” boxes
+- “Common confusion” boxes
+- “Practical scanner implication” boxes
+- “Artifact recognition” boxes
+- “Key takeaway” boxes
+- short comparison tables
+- troubleshooting checklists
+- concept maps connecting physics to image appearance
+
+J. Fidelity to source organization and content coverage
+- Track all source content carefully so that nothing important is lost.
+- If multiple slides repeat a concept, synthesize them instead of repeating verbatim.
+- If the slide order is pedagogically weak, reorganize it into a better textbook sequence while preserving all content.
+- If the source contains references, named methods, or cited authors, preserve them when useful.
+
+K. Final deliverable
+Produce a complete textbook manuscript suitable for export as a PDF.
+The formatting should look like a professional textbook chapter set, not like notes.
+Use:
+- clear chapter titles,
+- section headings,
+- figure labels,
+- page-conscious layout,
+- coherent transitions,
+- polished academic English.
+
+Workflow instructions:
+1. First, analyze the entire source PDF and extract all major topics and subtopics.
+2. Build a proposed textbook table of contents that covers everything in the PDF.
+3. Map original slide content into that structure.
+4. Expand each section into full textbook prose.
+5. Integrate all meaningful figures in context.
+6. Add missing bridge knowledge where needed.
+7. Ensure no important source content has been omitted.
+8. Produce the final textbook manuscript.
+
+Quality control checklist before finalizing:
+- Have all meaningful source concepts been retained?
+- Have all useful figures been included and explained?
+- Has slide shorthand been converted into textbook prose?
+- Are the chapters logically ordered?
+- Are equations fully explained?
+- Would a student be able to learn from this document without the original slides?
+- Does the result read like a real textbook rather than an expanded summary?
+
+Important constraints:
+- Do not compress the content into a short output.
+- Do not produce only an outline unless explicitly asked.
+- Do not skip figures just because they require explanation.
+- Do not leave slide bullet points in raw form.
+- Do not treat this as a summary task.
+- Treat this as a textbook authorship and reconstruction task.
+
+If the output is too long for one response, generate it in ordered parts while preserving one unified textbook structure and consistent numbering.
+
+Now begin by:
+1. extracting the full conceptual structure of the PDF,
+2. proposing a textbook table of contents,
+3. then writing the textbook in full.
+
+Additional strict requirements:
+- Be maximally comprehensive.
+- Err on the side of including more explanation, not less.
+- Convert every meaningful visual sequence into explanatory narrative.
+- Preserve practical scanning implications wherever present.
+- When discussing MRI artifacts, explain both the physics origin and the image appearance.
+- When discussing EPI-related methods, explain tradeoffs in terms of SNR, distortion, dropout, TR, TE, motion sensitivity, and practical fMRI consequences.
+- When discussing confounds, connect physiology, acquisition, and interpretation.
+- Include glossary entries for major MRI/fMRI terms.
+- Include end-of-chapter review questions and key takeaways.
+
+You may start with a detailed TOC + chapter plan + figure integration plan, then we will use 5 runs to complete filling in the contents to the TOC and chapters you designed.

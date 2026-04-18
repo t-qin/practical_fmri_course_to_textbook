@@ -1,0 +1,227 @@
+page	title
+1	Day One
+2	Net magnetization
+3	Signal strength depends on magnetic field
+4	Before excitation
+5	Excitation: the RF pulse
+6	Excitation: the RF pulse
+7	Magnetization after excitation:
+8	Magnetization after excitation:
+9	Signal detection:
+10	The NMR signal
+11	The spin echo
+12	Excitation
+13	After first evolution
+14	“Refocusing” pulse
+15	After refocusing
+16	After second evolution
+17	Longitudinal relaxation time (T1)
+18	Molecular origins of relaxation
+19	
+20	Approximate T1 and T2 values at 3 T
+21	Diffusion, T2 and T2*
+22	Chemical shift
+23	Bonus videos
+24	Day One
+25	Main MRI components
+26	
+27	Gradient coil
+28	Receive coil arrays
+29	32-channel coil
+30	Receive field heterogeneity
+31	Day Two
+32	Conjugate variables:
+33	Fourier transform:
+34	The FT can determine the frequency content of
+35	
+36	Fourier transform:
+37	
+38	Some useful
+39	Magnetic field gradient:
+40	One-dimensional MRI:
+41	Fourier transform of the signal:
+42	Other 1D Projections:
+43	The first MRI
+44	Slice selection
+45	• Recall that the Fourier transform of a sinc
+46	If the sinc-modulated RF pulse is
+47	Slice thickness:
+48	Slice selection also needs a refocusing
+49	Gradient echo for readout:
+50	After 1:
+51	After 1:
+52	After 1:
+53	GRE considerations:
+54	K-space:
+55	Take the 2D FT of a random image, we get its
+56	Fourier transforms for the x and kx dimensions:
+57	Reconsider a frequency encoding gradient:
+58	The MR signal under Gx:
+59	S(t) = ∫ M(x) e i g Gx t x.dx
+60	For the x dimension only
+61	Note that kx changes with time depending on Gx
+62	The action of Gx is to trace a path through the
+63	The gradient traces through the FT of the image:
+64	K-space trajectory for the gradient echo:
+65	•
+66	Phase encoding as seen in 2D k-space
+67	S(t) = ∫ M(y) e i g Gy t y.dy
+68	RF
+69	How would we do this?
+70	
+71	
+72	
+73	
+74	2D FT of this full k-space matrix produces a 2D MRI
+75	2D MRI: The steps
+76	The k parameter is simply the time-integral of a gradient
+77	Space
+78	What can we tell from k-space?
+79	
+80	Reduced resolution
+81	Only high spatial frequencies
+82	Day Two
+83	Aliasing
+84	Truncation artifact
+85	Stimulus limits
+86	Day Three
+87	K-space for EPI:
+88	The three “classic” EPI artifacts:
+89	Ghosting
+90	Ghosting
+91	Actual k-space = Ideal k-space + Error from delay
+92	Ghosts appear at FOV/2
+93	Where are the ghosts?
+94	In a good experiment they’re very weak!
+95	But they do vary with time.
+96	Other common causes of
+97	Scalp fat suppression required
+98	Origin of the chemical shift
+99	Chemical shifts
+100	Ramp sampling
+101	Ramp sampling: going too fast
+102	Distortion
+103	Distortion
+104	Bandwith in EPI
+105	Distortion
+106	A-P versus P-A phase encoding
+107	Dropout
+108	Signal dropout
+109	Thinner slices produce less dropout
+110	Two thin slices > one thick slice
+111	Multi-slice EPI: slice order
+112	Descending (stdev) Interleaved (stdev)
+113	EPI: pros and cons
+114	https://practicalfmri.blogspot.com/2012/07/physics-for-understanding-fmri.html
+115	EPI: crusher gradients
+116	EPI: slice select, k-space
+117	Good EPI
+118	TSNR image
+119	The brain is always moving!
+120	Magnetic susceptibility
+121	Magnetic susceptibility, c
+122	Interfaces, especially air-bone-brain, create strong
+123	A map of MR image phase shows the problem
+124	T2* relaxation
+125	Day Three
+126	Flip angle effects: spin history
+127	FA & inflow effects in fMRI
+128	FA: SNR and temporal SNR
+129	FA = 20 °
+130	FA = 20°
+131	Receive bias field effects
+132	(aka RFC-MoCo effect)
+133	Before motion correction
+134	After perfect motion correction
+135	Before motion correction
+136	After perfect motion correction
+137	How big is the effect?
+138	ΔS (%)
+139	“Anchoring” during volume realignment
+140	Day Four
+141	Full k-space
+142	Partial Fourier EPI
+143	Partial Fourier EPI:
+144	a - ib
+145	Reconstruct omitted portion
+146	We should be able to omit acquisition of the
+147	Early Late
+148	Partial Fourier speed gains
+149	Partial Fourier: more dropout?
+150	Partial Fourier can increase dropout
+151	Partial Fourier EPI
+152	Full k-space
+153	Early 6/8ths partial Fourier
+154	Late 6/8ths partial Fourier
+155	Partial Fourier and PE direction
+156	Early Late
+157	Partial Fourier: image smoothing
+158	Partial Fourier pros & cons
+159	In-plane acceleration
+160	R=2 k-space trajectory:
+161	
+162	32-channel coil
+163	GRAPPA scheme (R=2)
+164	GRAPPA motion sensitivity
+165	ACS1 … ACS2 … EPI1 … EPI2 … EPI3 ............ EPIN-1 … EPI N
+166	GRAPPA motion sensitivity
+167	GRAPPA pros & cons
+168	Further information
+169	Simultaneous multi-slice
+170	• Requires a phased-array coil
+171	Coils along the slice axis?
+172	From: D Feinberg & K Setsompop, JMR (2013)
+173	SMS-EPI pulse sequence
+174	From: D Feinberg & K Setsompop, JMR (2013)
+175	EPI SMS=6
+176	No intentional motion
+177	But even SMS has limits!
+178	Multi-echo EPI
+179	Weighted sum of echoes
+180	Classify BOLD vs non-BOLD
+181	Classify BOLD vs non-BOLD
+182	ME-EPI pros & cons
+183	Day Four
+184	FLEET: Fast Low-angle Excitation Echo-planar Technique
+185	Day Five
+186	“There is no situation so bad that
+187	Artifact recognition
+188	• Good axial EPI
+189	Normal ghosting
+190	Scalp ghosts
+191	Make sure Nyquist ghosts from eye movements
+192	Stdev image
+193	Prescan normalize affects
+194	Residual aliasing for GRAPPA
+195	Residual aliasing for SMS
+196	Residual aliasing for SMS = 3
+197	Residual aliasing: SMS+GRAPPA
+198	Good EPI
+199	TSNR image
+200	Movement
+201	Eye movements
+202	Head movements
+203	Talking
+204	Moving feet
+205	Coil instability
+206	Coil instability?
+207	Third party movement
+208	Motion in MP-RAGE
+209	Foreign objects – metal pin
+210	RF interference
+211	Gradient spiking
+212	Gradient spiking
+213	Gradient spiking: phantom check
+214	RF coil spikes
+215	Day Five
+216	System drifts & chronic motion
+217	Tactics for diagnosis
+218	Day Six
+219	Biological mechanisms
+220	Relative importance of nuisance variables to different classes of fMRI experiment.
+221	Human factors as modifiers
+222	Human factors as modifiers
+223	Caffeine: Damned if you do…?
+224	Relative importance of human factors modifying the main confounding mechanisms.
+225	Relative utility of MRI scans to capture biological confounds.
+226	Relative importance of auxiliary data to collect pre/post scan.

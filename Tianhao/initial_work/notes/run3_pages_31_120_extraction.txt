@@ -1,0 +1,840 @@
+===== PAGE 31 =====
+Day Two
+Morning
+Fundamentals of MRI
+
+
+===== PAGE 32 =====
+Conjugate variables:
+• Conjugate variables are related through 
+a Fourier transform:
+• Frequency (Hz, or s-1)  Û  time (s)
+• Space (cm)  Û  k-space (cm-1)
+F.T.
+F.T.
+
+
+===== PAGE 33 =====
+Fourier transform:
+The analysis of frequency content
+
+
+===== PAGE 34 =====
+The FT can determine the frequency content of 
+complex waves, like this one:
+
+
+===== PAGE 35 =====
+
+
+===== PAGE 36 =====
+Fourier transform:
+t
+S
+S
+t
+=
+•
+Fourier transform:   s(w) = ∫  S(t) e-iwt dt
+•
+A rotating vector produces a wave when viewed 
+     along any axis.
+•
+e if = cosf + isinf
+¥
+-¥
+
+
+===== PAGE 37 =====
+
+
+===== PAGE 38 =====
+Some useful
+Fourier pairs
+
+
+===== PAGE 39 =====
+Magnetic field gradient:
+• Start with the Larmor equation:
+w0 = gB0
+• Add a gradient Gx along the x 
+direction:
+         wx = g (B0 + Gx x)
+ 
+        
+• When Gx is off (zero) then all 
+points in space again rotate at w0 
+• Note: Gx subtracts from B0 on one 
+side, adds on the other. We care 
+about the total magnetic field at 
+each position.
+x1
+x2
+B0
+Gx
+Gradient “null crossing,”
+which defines magnet isocenter
+x
+
+
+===== PAGE 40 =====
+One-dimensional MRI:
+Gx
+B0
+x
+x1x2 ……............  xn
+ω1ω2 ……...........  ωn
+w0 = gB0 
+wx = g (B0 + Gx x)
+
+
+===== PAGE 41 =====
+Fourier transform of the signal:
+x
+x1x2 ……….….. xn
+wx
+s(w)
+
+
+===== PAGE 42 =====
+Other 1D Projections:
+x
+y
+s(w)
+wx
+Profile with x gradient
+s(w)
+wy
+Profile with y gradient
+
+
+===== PAGE 43 =====
+The first MRI
+Paul Lauterbur, Nature 1973, 242, 190-191.
+
+
+===== PAGE 44 =====
+Slice selection
+
+
+===== PAGE 45 =====
+• Recall that the Fourier transform of a sinc 
+function is a square (or top hat) and vice versa
+• Instead of using an on-off (square) RF pulse 
+for excitation, if we use a sinc-shaped RF 
+pulse then we can select a square “notch” of 
+frequencies centered about the frequency of 
+the RF pulse.
+Frequency domain                  Time domain
+
+
+===== PAGE 46 =====
+If the sinc-modulated RF pulse is 
+played out while a gradient is on along 
+z, the notch of frequencies Δn 
+corresponds to a spatial notch of width 
+Dz. This is a slice, of thickness Dz.
+
+
+===== PAGE 47 =====
+Slice thickness:
+• To change slice thickness we 
+can change Gz. If we double Gz 
+(bottom) we halve the slice 
+thickness.
+• Alternatively, we could change 
+the RF pulse length. Since time 
+and frequency are inverses, to 
+halve the slice thickness we 
+would need to double the 
+duration of the sinc-shaped RF 
+pulse. Hence, we control Gz if 
+we can, and keep the RF pulse 
+duration fixed.
+Gz
+Slice thickness
+w
+Gz
+Slice thickness
+w
+
+
+===== PAGE 48 =====
+Slice selection also needs a refocusing 
+gradient (echo) in practice:
+RF
+Gz
+a°
+Phase of magnetization
+is zero here!
+Why? Because while Gz coincident with the RF pulse produces the
+slice selectivity we seek, it also has a “spoiling” (dephasing) effect
+We need to undo the dephasing.
+
+
+===== PAGE 49 =====
+Gradient echo for readout:
+•
+The dephasing effect of 
+gradient 1 can be undone by 
+reversing the direction of the 
+gradient 2
+•
+Gradient dephasing is 
+reversible
+RF
+Gx
+90°
+1
+2
+3
+Phase of magnetization
+is zero here!
+Receiver
+
+
+===== PAGE 50 =====
+After 1:           
+•  w0 = 0
+•  wx1 = - g Gx x1
+•  wx2 = g Gx x2
+1
+2
+3
+wx2
+wx1
+w0
+Gradient echo (i)
+You are here!
+
+
+===== PAGE 51 =====
+After 1:           
+•  w0 = 0
+•  wx1 = - g Gx x1
+•  wx2 = g Gx x2
+1
+2
+3
+wx2
+wx1
+w0
+After 2:           
+•  w0 = 0
+•  wx1 = 0
+•  wx2 = 0
+Gradient echo (ii)
+w0
+You are here!
+
+
+===== PAGE 52 =====
+After 1:           
+•  w0 = 0
+•  wx1 = - g Gx x1
+•  wx2 = g Gx x2
+1
+2
+3
+wx2
+wx1
+w0
+After 2:           
+•  w0 = 0
+•  wx1 = 0
+•  wx2 = 0
+After 3:           
+•  w0 = 0
+•  wx1 = g Gx x1
+•  wx2 = - g Gx x2
+Gradient echo (iii)
+wx1
+wx2
+w0
+w0
+You are here!
+
+
+===== PAGE 53 =====
+GRE considerations:
+• Acquiring the rephasing plus the dephasing 
+magnetization (segments 2 + 3) provides ~sqrt(2) 
+more signal than 2 or 3 alone. 
+• A gradient echo adds some time between RF 
+excitation and detection.
+• Does NOT refocus T2’ effects!
+• A gradient echo is very different from a spin echo!
+RF
+Gx
+90°
+1
+2
+3
+Acquire
+
+
+===== PAGE 54 =====
+K-space:
+A useful pictorial representation of 
+imaging pulse sequences
+
+
+===== PAGE 55 =====
+Take the 2D FT of a random image, we get its 
+representation in reciprocal (k) space:
+
+
+===== PAGE 56 =====
+Fourier transforms for the x and kx dimensions:
+y and ky can be transformed analogously.
+We will return to this seemingly arbitrary set of equations in a moment. 
+But first…..
+“Signal”
+Image
+m-1
+m
+
+
+===== PAGE 57 =====
+Reconsider a frequency encoding gradient:
+RF
+Gx
+90°
+t
+•
+In the absence of Gx, i.e. prior to Gx commencing, the magnetization 
+(or signal if you prefer) arising from a small fraction dx of the sample 
+is given by: M(x)dx (ignoring T2 relaxation) 
+•
+The total signal is then the sum (integral over space) of all the tiny 
+chunks of signal along x, i.e.
+S(t)   =   ∫ M(x)dx   
+•
+Except that Gx isn’t active yet! We’re just imagining the sample 
+being chopped up into chunks along x. Let’s turn Gx on…
+
+
+===== PAGE 58 =====
+The MR signal under Gx:
+•
+When Gx is turned on, the total signal (ignoring T2) becomes:
+•
+In other words, each little chunk along x is being dephased by Gx. 
+It also just so happens that each little chunk has its own (unique) 
+frequency, wx being imposed by Gx. (We pretend that each chunk 
+dx is represented by a discrete point, to be represented by a pixel 
+in the final image.)
+•
+Note also that the signal has a time dependence that arises from 
+how long Gx has been on.
+
+
+===== PAGE 59 =====
+S(t)   = ∫  M(x) e i g Gx t x.dx
+becomes
+S(kx)   = ∫  M(x) e i kx x.dx
+if we define (seemingly arbitrarily!) 
+ kx  =  g Gx t 
+¥
+-¥
+¥
+-¥
+Let’s make the substitution for w:
+(cm-1)
+Didn’t we just see this equation a few slides ago…?
+
+
+===== PAGE 60 =====
+For the x dimension only
+The signal (in k-space):
+                 é
+                F.T.
+                 ê
+The image (in real space):
+
+
+===== PAGE 61 =====
+Note that kx changes with time depending on Gx 
+because we defined:  kx  =  g Gx t
+When Gx is off then kx is static.
+When Gx is on, the value of kx changes with the 
+magnitude of Gx and the time Gx has been on.
+We can make kx change more rapidly or more 
+slowly, as we desire. Let’s see it in practice.
+
+
+===== PAGE 62 =====
+The action of Gx is to trace a path through the 
+FT of the image:
+• At t=0 the gradient is off; we are at the origin, kx=0.
+• When Gx is on we journey through kx, stopping the 
+journey when Gx turns off again.
+kx=0 at t=0
+kx=    kx(max) at t=tGx
+
+
+===== PAGE 63 =====
+The gradient traces through the FT of the image:
+• In fact, kx is the time integral of the (evolving) gradient.
+• For a rectangular gradient it’s trivial. It is simply the area, 
+height (Gx) multiplied by the base (duration t):
+              kx  =  gGxt      (cm-1)
+• Now let’s see the gradient echo again, but this time from 
+the perspective of a “journey” in kx space.
+
+
+===== PAGE 64 =====
+K-space trajectory for the gradient echo:
+kx  =  gGxt 
+•
+Do a “mental integration” with 
+time along the pulse sequence
+•
+Before period 1 we are at      
+kx,ky = 0,0
+•
+Period 1 causes a journey from 
+kx = 0 to kx = kx(max.)
+RF
+Gx
+90°
+1
+2
+3
++kx
+-ky
+-kx
++ky
+
+
+===== PAGE 65 =====
+•
+After period 1 we are at            
+kx = kx(max.) indicated by the 
+green dot at lower left.
+•
+Period 2 causes a journey from 
+kx  = kx(max.) back to kx = 0
+ 
+(All dephasing is undone by the 
+balanced gradient echo, leaving 
+us back at the k-space origin.)
+•
+Period 3 causes a journey from 
+kx = 0 to kx = -kx(max.)
+RF
+Gx
+90°
+1
+2
+3
++kx
+-ky
+-kx
++ky
+K-space trajectory for the gradient echo:
+
+
+===== PAGE 66 =====
+Phase encoding as seen in 2D k-space
+•
+Consider a second gradient episode, Gy in the pulse sequence 
+below. We call this the phase encoding gradient because we will 
+encode spatial information as phase in y.
+•
+Recall 𝜔= 𝑑𝜑/𝑑𝑡
+•
+Remember that Gy can’t be coincident in time with Gx (if signal is 
+going to be recorded during Gx) or we get an oblique resultant 
+gradient.
+RF
+Gx
+90°
+tp
+Gy
+Acquire
+
+
+===== PAGE 67 =====
+S(t)   = ∫  M(y) e i g Gy t y.dy
+becomes
+S(ky)   = ∫  M(y) e i ky y.dy
+where
+ ky  =  g Gy t 
+¥
+-¥
+¥
+-¥
+(cm-1)
+The time evolution of the MR signal under Gy is analogous 
+to what we saw for Gx
+
+
+===== PAGE 68 =====
+RF
+Gx
+90°
+tp
+Gy
++kx
+-ky
+-kx
++ky
+Visualizing the k-space path:
+The Gy gradient first causes a 
+journey in the ky dimension, then 
+Gx causes another journey in kx.
+Now we can hit any point in the 
+kx,ky plane! All we need to do is 
+change the magnitude and/or 
+timing of Gx and Gy.
+More usefully, we can sample 
+the entire 2D k-space plane….
+
+
+===== PAGE 69 =====
+How would we do this?
+The green lines hit 16x16 points on this 2D k-space grid,
+so a 2D FT of the grid would give a 16x16 pixel 2D image.
+
+
+===== PAGE 70 =====
+
+
+===== PAGE 71 =====
+
+
+===== PAGE 72 =====
+
+
+===== PAGE 73 =====
+
+
+===== PAGE 74 =====
+2D FT of this full k-space matrix produces a 2D MRI
+
+
+===== PAGE 75 =====
+2D MRI:  The steps
+1. Select a slice
+2. Fill the k-space 
+matrix
+3. 2D Fourier transform
+
+
+===== PAGE 76 =====
+The k parameter is simply the time-integral of a gradient 
+multiplied by a coefficient, g/2p :
+We can now see that in MRI, the conjugate variable for 
+space is the gradient area. So, if we know what gradients 
+are being applied, we can easily relate them to the image 
+we will obtain!
+K-space summary:
+k(t)  =  g ∫ G(t).dt
+           2p
+t
+0
+
+
+===== PAGE 77 =====
+Space
+K-space
+kx
+ky
+Putting it all together:  2D MRI
+
+
+===== PAGE 78 =====
+What can we tell from k-space?
+• We need a full k-space 
+matrix for the complete 
+2D image
+• Different image 
+information - different 
+spatial frequency - is 
+encoded in different 
+regions of k-space
+
+
+===== PAGE 79 =====
+
+
+===== PAGE 80 =====
+Reduced resolution
+
+
+===== PAGE 81 =====
+Only high spatial frequencies
+
+
+===== PAGE 82 =====
+Day Two
+Afternoon
+MRI basics
+
+
+===== PAGE 83 =====
+Aliasing
+https://mriquestions.com/eliminate-wrap-around.html
+
+
+===== PAGE 84 =====
+Truncation artifact 
+(Gibbs ringing)
+
+
+===== PAGE 85 =====
+Stimulus limits
+Relative areas of effective current loops produced by gradient switching. 
+An effective current loop is induced in the plane perpendicular to the 
+switched gradient axis. 
+
+
+===== PAGE 86 =====
+Day Three
+Morning
+Introduction to EPI
+
+
+===== PAGE 87 =====
+K-space for EPI:
+A multiple gradient echo 
+sequence
+The first four-and-a-half echoes of
+a 16-echo “train,” for the 16x16 
+k-space matrix above: 
+
+
+===== PAGE 88 =====
+The three “classic” EPI artifacts:
+• Ghosting - The appearance of (hopefully) faint replica 
+images in the phase encoding dimension. 
+• Distortion - Misplacement of voxels along the phase 
+encoding dimension.
+• Dropout – Regions of signal loss arising from local 
+dephasing gradients.
+
+
+===== PAGE 89 =====
+Ghosting
+
+
+===== PAGE 90 =====
+Ghosting
+Left: A delay in signal digitization relative to the read gradient periods 
+causes rightward k-space lines to be offset relative to the leftward k-
+space lines.
+Right: Alternate kx lines after time-reversal (before 2D FT). Now we have 
+a clear zigzag in k-space. The magnitude of the zigzag determines the 
+intensity of the Nyquist ghosts.
+
+
+===== PAGE 91 =====
+Actual k-space         =         Ideal k-space       +        Error from delay
+Actual EPI                           Ideal EPI                            Ghost image    
+2Δky
+
+
+===== PAGE 92 =====
+Ghosts appear at FOV/2
+The error term has a ky increment twice as large as ky for the target image. 
+Doubling Δky causes the ghost image to have half the FOV as the ideal 
+image. Hence, the ghost image “aliases,” or wraps around in the FOV.
+y  (phase encode)
+x  (frequency encode)
+Aliasing always happens
+centered about the midpoint
+of PE dimension
+
+
+===== PAGE 93 =====
+Where are the ghosts?
+
+
+===== PAGE 94 =====
+In a good experiment they’re very weak!
+
+
+===== PAGE 95 =====
+But they do vary with time.
+150 volume
+time series,
+stdev image
+
+
+===== PAGE 96 =====
+Other common causes of 
+ghosts in EPI
+
+
+===== PAGE 97 =====
+Scalp fat suppression required
+Fatsat ON                                    Fatsat OFF
+
+
+===== PAGE 98 =====
+Origin of the chemical shift
+(Shielding is defined relative to tetramethysilane (TMS), a symmetric molecule.)
+Electrons in motion around a 
+molecule generate a magnetic field 
+that opposes B0. This shielding 
+varies by position around the 
+molecule. 
+
+
+===== PAGE 99 =====
+Chemical shifts
+H2O
+Lipids
+1 ppm = 123 Hz @ 2.9 T
+
+
+===== PAGE 100 =====
+Ramp sampling
+Gread
+ADC
+Dkread
+Determine triangles of Dkread with digital signal processing.
+But Gread must act correctly or we can get more ghosting.
+Dkread
+
+
+===== PAGE 101 =====
+Ramp sampling: going too fast
+Echo spacing = 0.50 ms                 Echo spacing = 0.43 ms
+
+
+===== PAGE 102 =====
+Distortion
+
+
+===== PAGE 103 =====
+Distortion
+Arises in the phase-encoded dimension, and is a result of 
+the relatively slow sampling in that dimension.
+Dt = 8 µs
+Dtesp = 0.5 ms
+
+
+===== PAGE 104 =====
+Bandwith in EPI
+• Frequency encoding axis:
+ 
+BW = (1/Dt)/Npixels 
+ 
+Typically 2000-2600 Hz/pixel
+• Phase encoding axis:
+ 
+BW = (1/Dtesp)/Npixels 
+ 
+Typically 20-35 Hz/pixel
+
+
+===== PAGE 105 =====
+Distortion
+BW ~ 15 Hz/pixel
+BW ~ 30 Hz/pixel
+BW ~ 2000 Hz/pixel
+Field heterogeneities around sinuses may be 200-300 Hz, 
+misplacing signal in these regions by several pixels.
+
+
+===== PAGE 106 =====
+A-P versus P-A phase encoding
+P-A
+A-P
+
+
+===== PAGE 107 =====
+Dropout
+
+
+===== PAGE 108 =====
+Signal dropout
+Not strictly an EPI issue,* there would be dropout for any
+gradient echo sequence at the same TE.
+* But signal decay in-plane during EPI readout makes it worse. 
+
+
+===== PAGE 109 =====
+Thinner slices produce less dropout
+
+
+===== PAGE 110 =====
+Two thin slices > one thick slice
+
+
+===== PAGE 111 =====
+Multi-slice EPI: slice order
+• Ascending
+• Descending
+• Interleaved
+DESC
+DESC
+INTL
+INTL
+No motion                                  Motion
+https://imaging.mrc-cbu.cam.ac.uk/imaging/CommonArtefacts
+Spin history effects
+
+
+===== PAGE 112 =====
+Descending (stdev)                        Interleaved (stdev)
+Slice ordering
+
+
+===== PAGE 113 =====
+EPI: pros and cons
+• T2
+* relaxation during the EPI readout causes 
+image artifacts.
+• But EPI is fast, and if speed is imperative then 
+we have to live with the artifacts.
+• BOLD functional contrast uses T2
+* changes 
+(when using a GRE sequence like EPI).
+
+
+===== PAGE 114 =====
+https://practicalfmri.blogspot.com/2012/07/physics-for-understanding-fmri.html
+A real EPI pulse sequence
+
+
+===== PAGE 115 =====
+EPI: crusher gradients
+Fat signal crusher gradients
+Spurious water crusher gradients
+
+
+===== PAGE 116 =====
+EPI: slice select, k-space
+N/2 ghost correction echoes
+Gradient echo train
+(to sample 2D k-space)
+Slice selection
+
+
+===== PAGE 117 =====
+Good EPI
+• Good axial EPI
+https://practicalfmri.blogspot.com/2011/11/understandin
+g-fmri-artifacts-good-axial.html
+• Good coronal & sagittal EPI
+https://practicalfmri.blogspot.com/2011/11/understandin
+g-fmri-artifacts-good.html
+
+
+===== PAGE 118 =====
+TSNR image
+SDEV image
+
+
+===== PAGE 119 =====
+The brain is always moving!
+
+
+===== PAGE 120 =====
+Magnetic susceptibility
+https://mriquestions.com/what-is-susceptibility-chi.html
+
+

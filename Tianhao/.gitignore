@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Future debug and temporary rebuild artifacts
+initial_work/outputs/audit_pages/
+initial_work/outputs/debug_*/
+initial_work/outputs/tmp_qc_*/
+initial_work/outputs/audit_*.png
+initial_work/outputs/TEST_PDF_WRITE.pdf
+initial_work/outputs/_pandoc_build_*
+initial_work/outputs/*.aux
+initial_work/outputs/*.toc
+initial_work/outputs/*.out
+initial_work/outputs/*.fls
+initial_work/outputs/*.fdb_latexmk
+initial_work/scripts/__pycache__/

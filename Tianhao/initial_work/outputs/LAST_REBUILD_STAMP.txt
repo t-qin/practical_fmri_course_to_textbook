@@ -1,0 +1,7 @@
+Last successful Pandoc/XeLaTeX export to canonical PDF.
+timestamp_local=2026-04-17T20:56:38.328294-07:00
+pandoc=/usr/bin/pandoc
+xelatex=/usr/bin/xelatex
+input=/mnt/c/practical_fmri_course_to_textbook/Tianhao/initial_work/outputs/_pandoc_build_input.md
+tex=/mnt/c/practical_fmri_course_to_textbook/Tianhao/initial_work/outputs/_pandoc_build_output.tex
+output=/mnt/c/practical_fmri_course_to_textbook/Tianhao/initial_work/outputs/practical_fmri_textbook_full_manuscript_polished.pdf
