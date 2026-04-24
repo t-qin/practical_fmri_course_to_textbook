@@ -16,4 +16,6 @@ This project root is organized by collaborator. The current textbook rebuild pac
 
 ## Start Here
 
+Use the [Project Writing Workspace](https://docs.google.com/document/d/1I_ksavK6OxWOSVa7v_IkRj0k82bvEjtBoJSDYZKB3EI/edit?usp=sharing) to collaborate on project writing.
+
 Open [Tianhao/README.md](./Tianhao/README.md) for the current rebuild package overview, then [Tianhao/docs/REBUILD_DOSSIER.md](./Tianhao/docs/REBUILD_DOSSIER.md) for the full pipeline and reproducibility details.
