@@ -1,0 +1,227 @@
+page	title	text_chars	images	drawings	visual_rich
+1	Day One	35	0	2	False
+2	Net magnetization	130	1	2	True
+3	Signal strength depends on magnetic field	261	1	2	False
+4	Before excitation	136	0	14	True
+5	Excitation: the RF pulse	271	0	15	False
+6	Excitation: the RF pulse	187	0	12	True
+7	Magnetization after excitation:	228	0	9	False
+8	Magnetization after excitation:	153	0	13	True
+9	Signal detection:	224	1	17	False
+10	The NMR signal	156	1	2	True
+11	The spin echo	13	1	2	True
+12	Excitation	44	1	12	True
+13	After first evolution	78	1	23	True
+14	"Refocusing" pulse	96	1	36	True
+15	After refocusing	112	1	46	True
+16	After second evolution	127	1	53	True
+17	Longitudinal relaxation time (T1)	325	0	10	False
+18	Molecular origins of relaxation	31	1	2	True
+19	Image-only teaching panel 19	0	2	2	True
+20	Approximate T1 and T2 values at 3 T	326	0	2	False
+21	Diffusion, T2 and T2*	21	1	2	True
+22	Chemical shift	14	2	3	True
+23	Bonus videos	151	0	4	False
+24	Day One	36	0	2	False
+25	Main MRI components	281	1	6	False
+26	Image-only teaching panel 26	0	1	2	True
+27	Gradient coil	13	2	2	True
+28	Receive coil arrays	48	1	2	True
+29	32-channel coil	68	1	2	True
+30	Receive field heterogeneity	27	1	2	True
+31	Day Two	35	0	2	False
+32	Conjugate variables:	160	0	2	False
+33	Fourier transform:	52	1	2	True
+34	The FT can determine the frequency content of	76	1	2	True
+35	Image-only teaching panel 35	0	1	2	True
+36	Fourier transform:	172	1	10	True
+37	Image-only teaching panel 37	0	1	2	True
+38	Some useful	25	1	2	True
+39	Magnetic field gradient:	397	0	8	False
+40	One-dimensional MRI:	114	0	35	True
+41	Fourier transform of the signal:	58	0	35	True
+42	Other 1D Projections:	89	0	21	True
+43	The first MRI	56	1	2	True
+44	Slice selection	15	0	2	False
+45	- Recall that the Fourier transform of a sinc	321	1	2	False
+46	If the sinc-modulated RF pulse is	190	2	4	True
+47	Slice thickness:	428	0	56	False
+48	Slice selection also needs a refocusing	288	0	22	False
+49	Gradient echo for readout:	230	0	20	False
+50	After 1:	101	0	20	True
+51	After 1:	144	0	26	True
+52	After 1:	209	0	34	True
+53	GRE considerations:	335	0	14	False
+54	K-space:	70	0	2	False
+55	Take the 2D FT of a random image, we get its	85	1	2	True
+56	Fourier transforms for the x and kx dimensions:	196	1	2	True
+57	Reconsider a frequency encoding gradient:	505	0	10	False
+58	The MR signal under Gx:	473	1	2	False
+59	S(t) = integral M(x) e i g Gx t x.dx	235	0	3	False
+60	For the x dimension only	88	2	2	True
+61	Note that kx changes with time depending on Gx	299	0	2	False
+62	The action of Gx is to trace a path through the	242	1	3	False
+63	The gradient traces through the FT of the image:	350	0	2	False
+64	K-space trajectory for the gradient echo:	254	0	19	False
+65	-	387	0	20	False
+66	Phase encoding as seen in 2D k-space	400	0	13	False
+67	S(t) = integral M(y) e i g Gy t y.dy	196	0	2	False
+68	RF	346	0	17	False
+69	How would we do this?	137	1	34	True
+70	Image-only teaching panel 70	0	1	2	True
+71	Image-only teaching panel 71	0	1	2	True
+72	Image-only teaching panel 72	0	1	2	True
+73	Image-only teaching panel 73	0	1	2	True
+74	2D FT of this full k-space matrix produces a 2D MRI	51	1	2	True
+75	2D MRI: The steps	87	1	2	True
+76	The k parameter is simply the time-integral of a gradient	335	0	3	False
+77	Space	51	1	4	True
+78	What can we tell from k-space?	199	1	2	True
+79	Image-only teaching panel 79	0	1	2	True
+80	Reduced resolution	18	1	2	True
+81	Only high spatial frequencies	29	1	2	True
+82	Day Two	28	0	2	False
+83	Aliasing	60	1	2	True
+84	Truncation artifact	36	1	2	True
+85	Stimulus limits	186	1	2	True
+86	Day Three	37	0	2	False
+87	K-space for EPI:	143	2	2	True
+88	The three "classic" EPI artifacts:	284	0	2	False
+89	Ghosting	8	0	2	False
+90	Ghosting	348	1	34	False
+91	Actual k-space = Ideal k-space + Error from delay	92	1	56	True
+92	Ghosts appear at FOV/2	350	1	7	False
+93	Where are the ghosts?	21	1	2	True
+94	In a good experiment they're very weak!	39	1	3	True
+95	But they do vary with time.	63	1	2	True
+96	Other common causes of	37	0	2	False
+97	Scalp fat suppression required	51	1	2	True
+98	Origin of the chemical shift	249	2	2	True
+99	Chemical shifts	49	2	4	True
+100	Ramp sampling	157	0	13	True
+101	Ramp sampling: going too fast	75	1	2	True
+102	Distortion	10	0	2	False
+103	Distortion	146	1	6	True
+104	Bandwith in EPI	172	0	2	False
+105	Distortion	174	1	5	True
+106	A-P versus P-A phase encoding	37	2	2	True
+107	Dropout	7	0	2	False
+108	Signal dropout	175	1	2	True
+109	Thinner slices produce less dropout	35	1	2	True
+110	Two thin slices > one thick slice	33	1	2	True
+111	Multi-slice EPI: slice order	183	1	2	True
+112	Descending (stdev) Interleaved (stdev)	53	2	2	True
+113	EPI: pros and cons	256	0	2	False
+114	https://practicalfmri.blogspot.com/2012/07/physics-for-understanding-fmri.html	104	1	2	True
+115	EPI: crusher gradients	84	4	5	True
+116	EPI: slice select, k-space	113	3	4	True
+117	Good EPI	227	0	2	False
+118	TSNR image	21	10	24	True
+119	The brain is always moving!	27	2	2	True
+120	Magnetic susceptibility	80	2	2	True
+121	Magnetic susceptibility, c	459	0	2	False
+122	Interfaces, especially air-bone-brain, create strong	104	1	2	True
+123	A map of MR image phase shows the problem	41	1	2	True
+124	T2* relaxation	89	1	2	True
+125	Day Three	39	0	2	False
+126	Flip angle effects: spin history	250	1	4	False
+127	FA & inflow effects in fMRI	258	1	2	False
+128	FA: SNR and temporal SNR	24	1	2	True
+129	FA = 20 degrees	44	1	3	True
+130	FA = 20 degrees	50	1	3	True
+131	Receive bias field effects	26	0	2	False
+132	(aka RFC-MoCo effect)	294	0	2	False
+133	Before motion correction	44	0	24	True
+134	After perfect motion correction	55	0	9	False
+135	Before motion correction	46	0	4	False
+136	After perfect motion correction	57	0	7	False
+137	How big is the effect?	110	2	2	True
+138	DeltaS (%)	75	2	2	True
+139	"Anchoring" during volume realignment	214	1	2	True
+140	Day Four	29	0	2	False
+141	Full k-space	12	2	2	True
+142	Partial Fourier EPI	19	0	2	False
+143	Partial Fourier EPI:	20	1	2	True
+144	a - ib	57	1	6	True
+145	Reconstruct omitted portion	127	2	11	True
+146	We should be able to omit acquisition of the	296	0	2	False
+147	Early Late	143	2	2	True
+148	Partial Fourier speed gains	261	1	2	False
+149	Partial Fourier: more dropout?	491	0	2	False
+150	Partial Fourier can increase dropout	133	1	5	True
+151	Partial Fourier EPI	57	1	2	True
+152	Full k-space	12	1	2	True
+153	Early 6/8ths partial Fourier	28	1	2	True
+154	Late 6/8ths partial Fourier	27	1	2	True
+155	Partial Fourier and PE direction	260	0	2	False
+156	Early Late	18	2	5	True
+157	Partial Fourier: image smoothing	70	1	2	True
+158	Partial Fourier pros & cons	275	0	2	False
+159	In-plane acceleration	30	0	2	False
+160	R=2 k-space trajectory:	23	2	2	True
+161	Image-only teaching panel 161	0	1	2	True
+162	32-channel coil	68	1	2	True
+163	GRAPPA scheme (R=2)	446	0	2	False
+164	GRAPPA motion sensitivity	303	0	2	False
+165	ACS1 … ACS2 … EPI1 … EPI2 … EPI3 ............ EPIN-1 … EPI N	205	0	6	False
+166	GRAPPA motion sensitivity	90	3	2	True
+167	GRAPPA pros & cons	213	0	2	False
+168	Further information	168	0	2	False
+169	Simultaneous multi-slice	62	0	2	False
+170	- Requires a phased-array coil	371	0	2	False
+171	Coils along the slice axis?	56	1	2	True
+172	From: D Feinberg & K Setsompop, JMR (2013)	116	2	4	True
+173	SMS-EPI pulse sequence	140	1	2	True
+174	From: D Feinberg & K Setsompop, JMR (2013)	116	1	2	True
+175	EPI SMS=6	71	2	2	True
+176	No intentional motion	123	3	5	True
+177	But even SMS has limits!	243	0	2	False
+178	Multi-echo EPI	192	0	2	False
+179	Weighted sum of echoes	56	1	2	True
+180	Classify BOLD vs non-BOLD	25	1	2	True
+181	Classify BOLD vs non-BOLD	25	1	2	True
+182	ME-EPI pros & cons	260	0	2	False
+183	Day Four	31	0	2	False
+184	FLEET: Fast Low-angle Excitation Echo-planar Technique	226	1	2	False
+185	Day Five	46	0	2	False
+186	"There is no situation so bad that	106	0	2	False
+187	Artifact recognition	420	0	2	False
+188	- Good axial EPI	243	0	2	False
+189	Normal ghosting	15	1	2	True
+190	Scalp ghosts	12	1	5	True
+191	Make sure Nyquist ghosts from eye movements	90	1	2	True
+192	Stdev image	11	1	6	True
+193	Prescan normalize affects	62	1	2	True
+194	Residual aliasing for GRAPPA	49	1	2	True
+195	Residual aliasing for SMS	40	1	2	True
+196	Residual aliasing for SMS = 3	29	1	2	True
+197	Residual aliasing: SMS+GRAPPA	29	3	2	True
+198	Good EPI	227	0	2	False
+199	TSNR image	21	10	24	True
+200	Movement	109	0	2	False
+201	Eye movements	13	1	2	True
+202	Head movements	14	1	2	True
+203	Talking	7	1	2	True
+204	Moving feet	11	1	2	True
+205	Coil instability	75	3	5	True
+206	Coil instability?	166	2	4	True
+207	Third party movement	86	2	5	True
+208	Motion in MP-RAGE	113	1	2	True
+209	Foreign objects - metal pin	27	1	2	True
+210	RF interference	15	1	2	True
+211	Gradient spiking	16	2	2	True
+212	Gradient spiking	16	1	2	True
+213	Gradient spiking: phantom check	31	1	2	True
+214	RF coil spikes	36	3	2	True
+215	Day Five	48	0	2	False
+216	System drifts & chronic motion	178	1	11	True
+217	Tactics for diagnosis	324	0	2	False
+218	Day Six	25	0	2	False
+219	Biological mechanisms	21	1	2	True
+220	Relative importance of nuisance variables to different classes of fMRI experiment.	82	1	2	True
+221	Human factors as modifiers	26	1	2	True
+222	Human factors as modifiers	26	1	2	True
+223	Caffeine: Damned if you do…?	157	1	2	True
+224	Relative importance of human factors modifying the main confounding mechanisms.	79	1	2	True
+225	Relative utility of MRI scans to capture biological confounds.	112	2	2	True
+226	Relative importance of auxiliary data to collect pre/post scan.	63	1	2	True
